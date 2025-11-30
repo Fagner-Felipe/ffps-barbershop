@@ -31,7 +31,7 @@ const Home = async () => {
           src={barbershopBanner}
           alt="Agende agora"
           sizes="100vw"
-          className="w-full h-auto rounded-2xl"
+          className="w-full h-auto rounded-2xl md:w-5xl mx-auto"
         />
         <PageSection>
           <PageSectiontitle>Agendamentos</PageSectiontitle>

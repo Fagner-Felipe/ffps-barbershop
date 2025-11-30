@@ -7,7 +7,7 @@ interface BarbershopItemProps {
 
 const BarbershopItem = ({ barbershop }: BarbershopItemProps) => {
   return (
-    <div className="relative min-h-[280px] min-w-[280px] rounded-xl">
+    <div className="relative min-h-[325px] min-w-[325px] rounded-xl ">
       <div className="bg-linear-to-t from-black to-transparent h-full w-full absolute top-0 left-0 z-10 rounded-lg" />
       <Image
         src={barbershop.imageUrl}

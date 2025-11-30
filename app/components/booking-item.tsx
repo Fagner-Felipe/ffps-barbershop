@@ -12,7 +12,7 @@ interface BookingItemProps {
 
 const BookingItem = (props: BookingItemProps) => {
   return (
-    <Card className="flex w-full min-w-full flex-row items-center justify-between p-0">
+    <Card className=" flex w-full flex-row items-center justify-between p-0 md:w-5xl mx-auto">
       {/* Esquerda */}
       <div className="flex flex-col gap-4 flex-1 p-6">
         <Badge variant="default">Confirmado</Badge>
