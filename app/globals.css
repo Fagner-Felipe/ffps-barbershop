@@ -5,38 +5,58 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(0.994 0 0);
-  --foreground: oklch(0.2178 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.2178 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.2178 0 0);
-  --primary: oklch(0.433 0.0745 149.7347);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.9067 0 0);
-  --secondary-foreground: oklch(0.2178 0 0);
-  --muted: oklch(0.9551 0 0);
-  --muted-foreground: oklch(0.5555 0 0);
-  --accent: oklch(0.9454 0.015 151.7659);
-  --accent-foreground: oklch(0.2178 0 0);
+  /* Cores claras baseadas em #E8F1F2 (Azure) */
+  --background: oklch(0.95 0.01 245);
+  --card: oklch(0.95 0.01 245);
+  --popover: oklch(0.95 0.01 245);
+  --input: oklch(0.95 0.01 245);
+  --ring: oklch(0.4 0.12 245); /* Sapphire Blue */
+
+  /* Cores escuras de texto e elementos, baseadas em #13293D (Prussian Blue) */
+  --foreground: oklch(0.25 0.05 240);
+  --card-foreground: oklch(0.25 0.05 240);
+  --popover-foreground: oklch(0.25 0.05 240);
+
+  /* Cor Primária: #006494 (Sapphire Blue) */
+  --primary: oklch(0.4 0.12 245);
+  --primary-foreground: oklch(1 0 0); /* Branco */
+
+  /* Cor Secundária: #247BA0 (Celadon Blue) */
+  --secondary: oklch(0.53 0.1 238);
+  --secondary-foreground: oklch(0.25 0.05 240);
+
+  /* Cores Muted (Sutis): Ajustes do BG e Celadon Blue */
+  --muted: oklch(0.92 0.005 245);
+  --muted-foreground: oklch(0.53 0.1 238);
+
+  /* Cor de Destaque (Accent): #1B98E0 (Carolina Blue) */
+  --accent: oklch(0.6 0.15 258);
+  --accent-foreground: oklch(0.25 0.05 240);
+
+  /* Borda: Subtilmente mais escura que o BG */
+  --border: oklch(0.85 0.005 245);
+
+  /* Destructive (mantido em vermelho para funcionalidade de erro) */
   --destructive: oklch(0.53 0.1547 24.056);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.8699 0 0);
-  --input: oklch(1 0 0);
-  --ring: oklch(0.433 0.0745 149.7347);
-  --chart-1: oklch(0.433 0.0745 149.7347);
-  --chart-2: oklch(0.6402 0.069 155.0903);
-  --chart-3: oklch(0.7641 0.0506 150.5513);
-  --chart-4: oklch(0.8883 0.0287 151.8825);
-  --chart-5: oklch(0.9712 0.0075 151.8901);
-  --sidebar: oklch(0.9791 0 0);
-  --sidebar-foreground: oklch(0.2178 0 0);
-  --sidebar-primary: oklch(0.433 0.0745 149.7347);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.9454 0.015 151.7659);
-  --sidebar-accent-foreground: oklch(0.2178 0 0);
-  --sidebar-border: oklch(0.9067 0 0);
-  --sidebar-ring: oklch(0.433 0.0745 149.7347);
+
+  /* Sidebar (usando o mesmo esquema de cores principais) */
+  --sidebar: oklch(0.92 0.005 245);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+
+  /* Cores de Gráfico (usando variações da paleta) */
+  --chart-1: oklch(0.4 0.12 245); /* Sapphire Blue */
+  --chart-2: oklch(0.53 0.1 238); /* Celadon Blue */
+  --chart-3: oklch(0.6 0.15 258); /* Carolina Blue */
+  --chart-4: oklch(0.75 0.05 245);
+  --chart-5: oklch(0.9 0.02 245);
+
   --font-sans: Inter, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: JetBrains Mono, monospace;
@@ -65,38 +85,56 @@
 }
 
 .dark {
-  --background: oklch(0.2178 0 0);
-  --foreground: oklch(0.994 0 0);
-  --card: oklch(0.2686 0 0);
-  --card-foreground: oklch(0.994 0 0);
-  --popover: oklch(0.2686 0 0);
-  --popover-foreground: oklch(0.994 0 0);
-  --primary: oklch(0.433 0.0745 149.7347);
+  /* Cores escuras baseadas em #13293D (Prussian Blue) */
+  --background: oklch(0.25 0.05 240);
+  --sidebar: oklch(0.25 0.05 240);
+  --card: oklch(0.28 0.05 240);
+  --popover: oklch(0.28 0.05 240);
+  --input: oklch(0.28 0.05 240);
+  --border: oklch(0.4 0.05 240);
+  --ring: oklch(0.4 0.12 245); /* Sapphire Blue */
+
+  /* Cores claras de texto e elementos, baseadas em #E8F1F2 (Azure) */
+  --foreground: oklch(0.95 0.01 245);
+  --card-foreground: oklch(0.95 0.01 245);
+  --popover-foreground: oklch(0.95 0.01 245);
+
+  /* Cor Primária: #006494 (Sapphire Blue) */
+  --primary: oklch(0.4 0.12 245);
   --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.3211 0 0);
-  --secondary-foreground: oklch(0.994 0 0);
-  --muted: oklch(0.2891 0 0);
-  --muted-foreground: oklch(0.7155 0 0);
-  --accent: oklch(0.3338 0.0309 150.119);
-  --accent-foreground: oklch(0.994 0 0);
+
+  /* Cor Secundária: #247BA0 (Celadon Blue) */
+  --secondary: oklch(0.53 0.1 238);
+  --secondary-foreground: oklch(0.95 0.01 245);
+
+  /* Cores Muted (Sutis) */
+  --muted: oklch(0.35 0.07 240);
+  --muted-foreground: oklch(0.7 0.05 245);
+
+  /* Cor de Destaque (Accent): #1B98E0 (Carolina Blue) */
+  --accent: oklch(0.6 0.15 258);
+  --accent-foreground: oklch(0.95 0.01 245);
+
+  /* Destructive (mantido) */
   --destructive: oklch(0.6591 0.153 22.1703);
   --destructive-foreground: oklch(0.2178 0 0);
-  --border: oklch(0.3979 0 0);
-  --input: oklch(0.2686 0 0);
-  --ring: oklch(0.433 0.0745 149.7347);
-  --chart-1: oklch(0.433 0.0745 149.7347);
-  --chart-2: oklch(0.6402 0.069 155.0903);
-  --chart-3: oklch(0.7641 0.0506 150.5513);
-  --chart-4: oklch(0.8883 0.0287 151.8825);
-  --chart-5: oklch(0.9712 0.0075 151.8901);
-  --sidebar: oklch(0.2478 0 0);
-  --sidebar-foreground: oklch(0.994 0 0);
-  --sidebar-primary: oklch(0.433 0.0745 149.7347);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.3338 0.0309 150.119);
-  --sidebar-accent-foreground: oklch(0.994 0 0);
-  --sidebar-border: oklch(0.3485 0 0);
-  --sidebar-ring: oklch(0.433 0.0745 149.7347);
+
+  /* Sidebar (usando o mesmo esquema de cores principais) */
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+
+  /* Cores de Gráfico (usando variações da paleta) */
+  --chart-1: oklch(0.4 0.12 245);
+  --chart-2: oklch(0.53 0.1 238);
+  --chart-3: oklch(0.6 0.15 258);
+  --chart-4: oklch(0.75 0.05 245);
+  --chart-5: oklch(0.9 0.02 245);
+
   --font-sans: Inter, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: JetBrains Mono, monospace;
